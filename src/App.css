@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'STUNNING-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-size: 16px;}
+a{text-decoration: none; color: #000;}
+ul, li{list-style: none;}
+
+header{display: flex; justify-content: space-between; width: 100%; max-width: 1200px; margin: auto;}
+header h1{width: 100%; margin: auto;  padding: 30px 0;}
+nav {width: 100%;margin: auto; justify-content: flex-end;
+padding: 15px 0; display: flex; gap: 58px;}
+
+nav a{  font-family: 'STUNNING-Bd'; color:#222; font-size: 1.2rem;}
+
+
 .App {
   text-align: center;
 }
