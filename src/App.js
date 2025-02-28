@@ -4,7 +4,9 @@ import './App.css';
 import UserList from "./components/UserList";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layout/MainLayout";
-import Books from "./components/Books";
+
+import BooksPage from "./pages/BooksPage";
+import BookDetail from "./pages/BookDetail";
 
 
 function App() {
@@ -13,7 +15,11 @@ function App() {
       <Route path="/" element={<MainLayout/>}>
         <Route index element={<HomePage />} />
         <Route path="/users" element={<UserList />} /> 
-        <Route path="/books" element={<Books />} />
+        <Route 
+        path="/books/:id" 
+        element={<BookDetail />} 
+        />
+        <Route path="/books" element={<BooksPage />} />
       </Route>
     )
   );

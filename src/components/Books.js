@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { bookSlice } from "../store/slice/bookSlice"; 
+import { Link } from "react-router-dom";
 
 
 const Books = () => {
@@ -22,7 +23,9 @@ const Books = () => {
     return (
         <>
             <ul>
+                
                 {bookData?.map((book) => (
+                    <Link to={`/books/${book.id}`}>
                         <li key={book.id}>
                
                                 <div><img src={book.imgUrl} alt={book.title} / ></div>
@@ -33,6 +36,7 @@ const Books = () => {
                                 </ul>
                 
                         </li>
+                    </Link>
                 ))}
             </ul>
         </>
